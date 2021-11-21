@@ -1,4 +1,4 @@
-TWRP Device configuration for Xiaomi Redmi 8 Device
+TWRP Device configuration for Xiaomi Redmi 8A Device
 ============================================================
 Basic   | Spec Sheet
 -------:|:-------------------------
@@ -16,6 +16,4 @@ Rear Depth Sensor  | 2.0 MP
 Front Camera | 8.0 MP
 Release Date | Oct 2019
 
-![Redmi_8](https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-8/c3i-header.png "Redmi_8")
-
-Note : System/Vendor prebuilt files extracted from device or taken from [here.](https://github.com/AndroidDumps/xiaomi_olive_dump/)
+![Redmi_8A](https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-8A/c3i-header.png "Redmi_8A")

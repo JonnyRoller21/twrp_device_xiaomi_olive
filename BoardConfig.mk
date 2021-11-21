@@ -23,7 +23,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-PLATFORM_PATH := device/xiaomi/olive
+PLATFORM_PATH := device/xiaomi/olivelite
 
 LC_ALL=C
 ALLOW_MISSING_DEPENDENCIES=true
@@ -70,28 +70,20 @@ BOARD_KERNEL_CMDLINE += androidboot.usbconfigfs=true loop.max_part=7
 # Kernel
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_PREBUILT_KERNEL := $(PLATFORM_PATH)/prebuilt/kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 
-ifeq ($(FOX_BUILD_FULL_KERNEL_SOURCES),1)
-  TARGET_KERNEL_SOURCE := kernel/xiaomi/olive
-  BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-  TARGET_KERNEL_CONFIG := olive-perf_defconfig
-else
-  TARGET_PREBUILT_KERNEL := $(PLATFORM_PATH)/prebuilt/kernel
-PRODUCT_COPY_FILES += \
-    $(TARGET_PREBUILT_KERNEL):kernel
-endif
-
 # Fstab
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/recovery.fstab
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_olive
-TARGET_RECOVERY_DEVICE_MODULES := libinit_olive
+TARGET_INIT_VENDOR_LIB := libinit_olivelite
+TARGET_RECOVERY_DEVICE_MODULES := libinit_olivelite
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 
 # QCOM Stuff

@@ -18,7 +18,7 @@
 # 	Please maintain this if you use this script or any part of it
 #
 
-FDEVICE="olive"
+FDEVICE="olivelite"
 
 fox_get_target_device() {
 local chkdev=$(echo "$BASH_SOURCE" | grep $FDEVICE)
@@ -60,9 +60,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
 	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tue Jan 1 2019 00:00:00 GMT
 
-	# Use ROM fingerprint where available
-        export OF_USE_SYSTEM_FINGERPRINT=1
-
 	# OTA
 	export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
 	export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
@@ -98,8 +95,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	# Maintainer stuff
 	export FOX_VERSION="R11.1"
-	export OF_MAINTAINER="deadlylxrd"
-	export OF_MAINTAINER_AVATAR="/home/deadlylxrd/ofox_ava.png"
+	export OF_MAINTAINER="JonnyRoller21"
+	export OF_MAINTAINER_AVATAR="/home/manjaro/ofox_ava.png"
 
 	# A12 hack
 	export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
