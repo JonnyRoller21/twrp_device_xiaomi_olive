@@ -95,8 +95,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	# Maintainer stuff
 	export FOX_VERSION="R11.1"
-	export OF_MAINTAINER="JonnyRoller21"
-	export OF_MAINTAINER_AVATAR="/home/manjaro/ofox_ava.png"
+	export OF_MAINTAINER="JonnyRoller23"
+	export OF_MAINTAINER_AVATAR="/home/solus/ofox_ava.png"
 
 	# A12 hack
 	export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
