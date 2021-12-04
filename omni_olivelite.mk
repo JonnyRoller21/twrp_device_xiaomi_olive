@@ -36,7 +36,7 @@ $(call inherit-product, build/target/product/core_64_bit.mk)
 PRODUCT_DEVICE := olivelite
 PRODUCT_NAME := omni_olivelite
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 8
+PRODUCT_MODEL := Redmi 8A
 PRODUCT_MANUFACTURER := Xiaomi
 
 #Add treble compatibility
